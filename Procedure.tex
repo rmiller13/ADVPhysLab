@@ -1,0 +1,160 @@
+\section{Procedure}
+\label{sec:procedure}
+
+\subsection{Inspection of Equipment}
+\label{sub:inspection}
+
+To ensure proper operation of the interferometer, all optics must be in good
+shape, and should be inspected prior to setup. Also note that latex gloves
+should be worn at all times when handling optics directly, and care should be
+taken when handling mounted optics.
+
+When inspecting the optics, check that they are reasonably free of dust, oil,
+and fingerprints. If there are fingerprints or large quantities of dust or oil,
+then ask the instructor for assistance in cleaning the optics.
+
+After checking the optics, be sure to verify the functionality of the
+Helium-Neon laser. Please note that some He-Ne lasers have a warm up period, and
+may also have a shutter that needs to be opened.
+
+\subsection{Preliminary Beam Alignment}
+\label{sub:preliminary}
+
+    \begin{enumerate}
+    \item Mounting the He-Ne Laser
+        \begin{enumerate}
+        \item Insert the laser into the ULM-TILT before attaching optical
+        posts and locate a position near the corner of the breadboard where the
+        laser path lies over a row of screw holes.
+        \item Mount the ULM-TILT base to the breadboard with optical posts and
+        post holders. As one screw hole lies below the laser mount, the laser
+        must be removed for this step.
+        \item Re-insert the laser and tighten the set screw to securely hold the
+        laser.
+        \item Verify that the laser's beam still lies over the row of holes.
+        \end{enumerate}
+    \item Mounting the Silvered Mirrors
+
+        \emph{Skip if your mirrors are already mounted to a Kinematic Mirror
+        Mount}
+
+
+        \begin{enumerate}
+        \item Attach the 1" mirror holder to the Kinematic Mirror Mount
+
+        \emph{Note}: You may have to remove the mirror collar (retaining ring)
+        to properly mount the mirror holder to the Kinematic Mirror Mount.
+        \item Carefully place the mirror into the holder and tighten the mirror
+        collar.
+        \item Check that the mirror is not loose in the holder. If it is, cut
+        several small squares of paper (a little less than the mirror's
+        diameter) and layer them in the mirror holder until the mirror is snug.
+        \end{enumerate}
+    \item Laying out the Beam Path
+    \label{step:leveling}
+        \begin{enumerate}
+        \item Place the iris halfway between the first two mirrors and shine the
+        beam through the iris. If the laser If the laser reflected off the
+        second does not retro-reflect through the iris onto the first mirror,
+        adjust the mirrors until it does.
+        \item Repeat this with the other mirrors until the entire beam path is
+        level.
+        \item When completed, the beam should travel from the He-Ne laser to the
+        Piezo mirror, then retro reflect back to the laser, aligned as close to
+        the aperture as possible.
+        \end{enumerate}
+    \item Introducing the Beam Splitter Cube
+        \begin{enumerate}
+        \item Mounting the Beam Splitter Cube
+        \item Using the iris, verify that the beam is level between Mirror 2 and
+        the Piezo Mirror. If it is not, you may need to use the alignment screws
+        on the Kinematic Platform to level the Beam Splitter. You \emph{should
+        not} have to adjust the mirrors, as they were level previously.
+        \label{step:beamsplitter_level}
+        \end{enumerate}
+    \item Introducing Mirror 2 and Lens 3
+        \begin{enumerate}
+        \item Place Mirror 3 perpendicular to the beam path between Mirror 2 and
+        the Piezo Mirror, and an equal distance from the beam splitter as the
+        Piezo Mirror. Refer to \ref{fig:layout} for clarification.
+        \item Verify that the center of Mirror 3 is the same height as that of
+        Mirrors 1 and 2, and all other optics.
+        \item Place Lens 3 perpendicular to the beam path between Mirror 2 and
+        the Piezo Mirror, opposite from Mirror 3. 
+        \item Verify that the center of Lens 3 is the same height as that of all
+        other optics.
+        \item Now using the iris, verify that the beam between Mirror 3 and Lens
+        3 is level. Again, if it is not level, use the alignment screws on the
+        Kinematic Platform for adjustment, as in Step
+        \ref{step:beamsplitter_level}.  
+        \end{enumerate}
+    \end{enumerate}
+        
+\subsection{Further Beam Alignment}
+\label{sub:further}
+
+    %\begin{enumerate}
+    %\item First Visualization
+    \subsubsection{First Visualization}
+        \begin{enumerate}
+        \item Place a paper or screen vertically after Lens 3.
+        \item Depending on how well aligned your interferometer is, you should
+        see either two distinct beams, or a single beam with dark banding. If
+        you see two beams, use the alignment screws on Mirror 3 and the Piezo
+        Mirror to align these two beams on screen.
+
+            \emph{Alignment Tips}:
+            \begin{itemize}
+            \item If you see purely vertical banding, your misalignment lies
+            only in the horizontal direction.
+            \item Similarly, if you see purely horizontal banding, your
+            misalignment lies only in the vertical direction.
+            \item Diagonal banding is a combination of both vertical and
+            horizontal banding.
+            \item Curved banding is a good sign, as the misalignment is now
+            minimal.  You should seek the center of curvature of the bands.
+            \end{itemize}
+        \end{enumerate} 
+    %\item Test your interference
+    \subsubsection{Test your interference}
+
+        The interferometer should be sensitive enough to pick up vibrations in
+        the table and breadboard generated by tapping. These would be seen as
+        dark bands moving on the screen.
+    %\item Achieving Optimum Focus
+    \subsubsection{Achieving Optimum Focus}
+        \begin{enumerate}
+        \item Set the centerline height of Lenses 1 and 2 to match all other
+        optics.
+        \item Place Lenses 1 and 2 into the beam path between the He-Ne laser
+        and Mirror 1, and adjust their position to achieve the best focus
+        visible on the screen.
+        \item Mount the post holders to the board and verify that the beam path
+        is still level throughout the entire interferometer. (Refer to Section
+        \ref{sub:preliminary} Step \ref{step:leveling} if needed)
+        \end{enumerate}
+    %\end{enumerate}
+
+
+\subsection{Using the Photo Diode}
+\label{sec:photodiode}
+
+    \subsubsection{Introducing the Photo Diode}
+        \begin{enumerate}
+        \item Replace Lens 3 with the Photo Diode and center the beam on the
+        sensor.
+        \item Connect the Photo Diode to CH1 of the oscilloscope using a BNC
+        cable and the Variable Terminator set to the closest match possible to
+        your oscilloscope's impedance.
+        \item Turn on the voltage bias.
+        \item Now fringes can be seen as fluctuations in the signal.
+        \end{enumerate}
+    \subsubsection{Using the Piezo Stack}
+        
+        \emph{NOTE: Do not send square waves or frequencies greater than 100Hz
+        to the Piezo, as this may result in damage.}
+        \begin{enumerate}
+        \item Set the function generator to a low frequency sinusoid.
+        \item Connect the function generator's output to the oscilloscope's CH2
+        and the Piezo via a T-connector.
+        \end{enumerate}
