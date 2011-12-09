@@ -1,27 +1,30 @@
 \documentclass[twocolumn]{article}
 \usepackage{graphicx}
 \usepackage{mathtools}
-\begin{document}  
+\usepackage{float}
+\usepackage{subfig}
+\usepackage[cm]{fullpage}
 
+\begin{document}  
 \graphicspath{{./images/}}
 
-\input{./lmtitle.tex}
+\title{\textsc{Modern Interferometry Lab}}
+\author{A. Ford, A. Garcia, R. Miller}
+\date{Fall 2011}
+\maketitle
 
 \onecolumn
 \tableofcontents
 
-\clearpage
-
 \twocolumn
-\section{Background}
-
 \input{./Background.tex}
 
 \input{./Materials.tex}
-
-\input{./InterferometerLayout.tex}
-		
+\onecolumn
+\input{./InterferometerLayout.tex}		
+\twocolumn
 \input{./Procedure.tex}
+
 
 \input{./experiment}
 	
@@ -37,4 +40,4 @@
 
 \input{./Citations.tex}
 
- \end{document}
+\end{document}
