@@ -1,7 +1,15 @@
 \section{Results/Analysis}
-
-	The piezo moves 6.1 $\mu$m per 100 Volts so therefore it moves a total of 61 $\frac{\mu m}{V}$.
-	The value of $\Delta V_{averaged}$ comes from the average of the $\Delta V$.
+\label{sec:results}
+\begin{align*}
+	Mean &= \frac{Y_1 + Y_2}{2} \\
+		 &= 4.28 \\
+    \gamma &= \frac{Amplitude}{Mean} \\
+	\gamma &= \frac{4.40}{4.28} \\
+	\gamma &= 1.02
+\end{align*} 
+The visibility from our interferometer was 1.02 \\
+The piezo moves 6.1 $\mu$m per 100 Volts so therefore it moves a total of 61 $\frac{nm}{V}$.
+The value of $\Delta V_{averaged}$ comes from the average of the $\Delta V$.
 \begin{align*}
 	D &= \frac{\lambda}{2} \\
 	D &= 61e^{-6} * \Delta V_{averaged} \\
@@ -10,10 +18,9 @@
 	\lambda &= 2*D \\
 	 &= 732e^{-9}	
 \end{align*}
-
-The wavelength of the laser comes out to be 739 $n$m. The actual value of the laser's wavelength is 632 $n$m, so our error was 
+The wavelength of the laser comes out to be 732 $n$m. The actual value of the laser's wavelength is 632 $n$m, so our error was 
 	\begin{align*}
 		error &=\frac{\lambda_{real}-\lambda_{expected}}{\lambda_{real}} \\
 			&= \frac{|632e^{-9}-732e^{-9}|}{632e^{-9}}	\\	
-			&= 15.82
+			&= 15.82 \%
 	\end{align*}
